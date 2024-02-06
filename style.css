@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.space-bit {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.nav {
+  padding: 20px 50px;
+  font-size: 14px;
+}
+
+.logo > div {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 40px;
+}
+
+.nav-list {
+  gap: 20px;
+}
+
+.category {
+  padding: 4px 50px;
+  font-size: 14px;
+  font-weight: 300;
+  gap: 70px;
+  text-transform: uppercase;
+}
+
+.text-swiper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 70px 50px 10px 50px;
+  overflow-y: auto;
+}
+
+.text-swiper::-webkit-scrollbar {
+  background-color: transparent;
+  height: 7px;
+}
+
+.text-swiper::-webkit-scrollbar-thumb {
+  background-color: coral;
+}
+
+.text-swiper div {
+  width: 70%;
+  flex-shrink: 0;
+}
+
+.text-swiper div h1 {
+  font-size: 5vmax;
+  font-weight: 300;
+}
+
+.img-swiper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.img-swiper::-webkit-scrollbar {
+  display: none;
+}
+
+.img-swiper > div {
+  flex-shrink: 0;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.img-swiper > div > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
